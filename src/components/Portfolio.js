@@ -1,32 +1,40 @@
 import React from "react";
 import PortfolioImg from "../asset/portfolio/portfolio.png";
+import youtube from "../asset/portfolio/my-youtube.png";
+import restaurant from "../asset/portfolio/restaurant.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: PortfolioImg,
+      src: restaurant,
+      code: "https://github.com/Dwarak-10/namaste-react/tree/master",
+      demo: "https://dwarakrestaurants.netlify.app/",
     },
     {
       id: 2,
-      src: PortfolioImg,
+      src: youtube,
+      code: "https://github.com/Dwarak-10/my-youtube",
+      demo: "",
     },
     {
       id: 3,
       src: PortfolioImg,
+      code: "https://github.com/Dwarak-10/portfolio",
+      demo: "https://peppy-kelpie-c1d483.netlify.app",
     },
-    {
-      id: 4,
-      src: PortfolioImg,
-    },
-    {
-      id: 5,
-      src: PortfolioImg,
-    },
-    {
-      id: 6,
-      src: PortfolioImg,
-    },
+    // {
+    //   id: 4,
+    //   src: PortfolioImg,
+    // },
+    // {
+    //   id: 5,
+    //   src: PortfolioImg,
+    // },
+    // {
+    //   id: 6,
+    //   src: PortfolioImg,
+    // },
   ];
   return (
     <div
@@ -42,7 +50,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, demo, code }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -50,12 +58,22 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a
+                  href={demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                </a>
+                <a
+                  href={code}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}
