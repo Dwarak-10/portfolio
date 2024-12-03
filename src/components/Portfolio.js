@@ -28,7 +28,7 @@ const Portfolio = () => {
       id: 2,
       src: PortfolioImg,
       code: "https://github.com/Dwarak-10/portfolio",
-      demo: "https://peppy-kelpie-c1d483.netlify.app",
+      demo: "https://dwarak-portfolio.netlify.app/",
     },
   ];
   return (
