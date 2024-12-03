@@ -1,40 +1,35 @@
 import React from "react";
 import PortfolioImg from "../asset/portfolio/portfolio.png";
-import youtube from "../asset/portfolio/my-youtube.png";
-import restaurant from "../asset/portfolio/restaurant.png";
+// import youtube from "../asset/portfolio/my-youtube.png";
+// import restaurant from "../asset/portfolio/restaurant.png";
+import devtinder from "../asset/portfolio/dev-tinder.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: restaurant,
-      code: "https://github.com/Dwarak-10/namaste-react/tree/master",
-      demo: "https://dwarakrestaurants.netlify.app/",
+      src: devtinder,
+      code: "https://github.com/Dwarak-10/devTinder-web",
+      demo: "https://devtinder-1.netlify.app/",
     },
+    // {
+    //   id: 1,
+    //   src: restaurant,
+    //   code: "https://github.com/Dwarak-10/namaste-react/tree/master",
+    //   demo: "https://dwarakrestaurants.netlify.app/",
+    // },
+    // {
+    //   id: 2,
+    //   src: youtube,
+    //   code: "https://github.com/Dwarak-10/my-youtube",
+    //   demo: "",
+    // },
     {
       id: 2,
-      src: youtube,
-      code: "https://github.com/Dwarak-10/my-youtube",
-      demo: "",
-    },
-    {
-      id: 3,
       src: PortfolioImg,
       code: "https://github.com/Dwarak-10/portfolio",
       demo: "https://peppy-kelpie-c1d483.netlify.app",
     },
-    // {
-    //   id: 4,
-    //   src: PortfolioImg,
-    // },
-    // {
-    //   id: 5,
-    //   src: PortfolioImg,
-    // },
-    // {
-    //   id: 6,
-    //   src: PortfolioImg,
-    // },
   ];
   return (
     <div
